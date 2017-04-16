@@ -1,7 +1,0 @@
-package org.learning.imdb.DataObjects;
-
-/**
- * Created by yesh on 4/16/17.
- */
-public class BoxOfficeDetails {
-}
