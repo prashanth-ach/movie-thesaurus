@@ -194,12 +194,18 @@ public class Movie {
 	public void setContentRating(String contentRating) {
 		this.contentRating = contentRating;
 	}
-	
 
 	@Override
 	public String toString() {
 
-		return "Title:\t" + getTitle();
+		return "Title:\t" + getTitle() + "\n\nRating:\t" + getRating() + "\n\nyear:\t" + getYear() + "\n runtime:\t"
+				+ getRuntime() + "\n country:\t" + getCountry() + "\n summary:\t" + getSummary() + "\n taglines:\t"
+				+ getTaglines() + "\n releasedate:\t" + getReleasedate() + "\n language:\t" + getLanguage()
+				+ "\n filmingLocations:\t" + getFilmingLocations() + "\n budget:\t" + getBudget() + "\n opening:\t"
+				+ getOpening() + "\n gross:\t" + getGross() + "\n productionCompany:\t" + getProductionCompany()
+				+ "\n color:\t" + getColor() + "\n aspectRatio:\t" + getAspectRatio() + "\n castandcrew_id:\t"
+				+ getCastandcrew_id() + "\n soundTMix:\t" + getSoundTMix() + "\n genres:\t" + getGenres()
+				+ "\n contentRating:\t" + getContentRating();
 	}
 
 }

@@ -21,6 +21,11 @@ public class MovieScraper extends AbstractScraper {
 		movie.setContentRating(element.getElementsByAttributeValue("itemprop", "contentRating").first().text());
 		movie.setRuntime(element.getElementsByAttributeValue("itemprop", "duration").first().text());
 		movie.setGenres(element.getElementsByAttributeValue("itemprop", "genre").first().text());
+		movie.setContentRating(element.getElementsByAttributeValue("itemprop", "contentRating").first().text());
+		movie.setReleasedate(element.getElementsByAttributeValue("itemprop", "datePublished").first().attr(content));
+		movie.setYear(element.getElementsByAttributeValue(,));
+		movie.set
+		
 
 		System.out.println(movie.toString());
 	}
