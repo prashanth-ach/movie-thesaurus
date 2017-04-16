@@ -8,19 +8,24 @@ import org.jsoup.nodes.Document;
 
 public abstract class AbstractScraper {
 
+	public Document doc;
+
 	public Document fetchContent(String url) {
-		Document doc = Jsoup.parse(url);
-		return null;
+		try {
+			doc = Jsoup.connect(url).get();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return doc;
 	}
 
 	public Document fetchContent(URL url, int timeOut) {
 		try {
-			Document doc = Jsoup.parse(url, timeOut);
-			return doc;
+			doc = Jsoup.parse(url, timeOut);
 		} catch (IOException e) {
 			e.printStackTrace();
-			return null;
 		}
+		return doc;
 	}
 
 	public abstract void extractInfo();

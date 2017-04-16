@@ -25,6 +25,7 @@ public class Movie {
 	private String castandcrew_id;
 	private String soundTMix;
 	private String genres;
+	private String contentRating;
 
 	public String getMovie_id() {
 		return movie_id;
@@ -185,4 +186,20 @@ public class Movie {
 	public void setGenres(String genres) {
 		this.genres = genres;
 	}
+
+	public String getContentRating() {
+		return contentRating;
+	}
+
+	public void setContentRating(String contentRating) {
+		this.contentRating = contentRating;
+	}
+	
+
+	@Override
+	public String toString() {
+
+		return "Title:\t" + getTitle();
+	}
+
 }
