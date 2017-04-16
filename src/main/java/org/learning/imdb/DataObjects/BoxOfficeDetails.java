@@ -1,4 +1,4 @@
-package org.learning.DataObjects;
+package org.learning.imdb.DataObjects;
 
 /**
  * Created by yesh on 4/16/17.
